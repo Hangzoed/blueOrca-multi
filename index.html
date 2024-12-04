@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blue Orca</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <style>
+        /* Custom styles to match the original design */
+        body {
+            background-color: white;
+            color: #111827;
+        }
+        .bg-custom-blue-900 {
+            background-color: #1e3a8a;
+        }
+        .bg-gradient-blue {
+            background: linear-gradient(to right, #1e3a8a, #1e40af);
+        }
+        .home-section {
+            background: linear-gradient(to bottom, rgba(0,59,70,0.9), rgba(7,87,91,0.9)), 
+                        url('assets/diesel-home.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+        .card-hover:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-blue-900 fixed-top">
+        <div class="container">
+            <a href="#page-top" class="navbar-brand d-flex align-items-center">
+                <img src="assets/logo.png" alt="Blue Orca Logo" height="40" class="me-3">
+                BLUE ORCA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="Services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="Contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section text-center">
+        <div>
+            <h1 class="display-4 fw-bold mb-4">Fuel and Petrochemical Manufacturer</h1>
+            <p class="lead mb-6">Delivering excellence in the energy sector</p>
+            <a href="About.html" class="btn btn-light text-primary rounded-pill">
+                Learn More
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-gradient-blue text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-4">About Us</h2>
+                <p class="lead mx-auto" style="max-width: 800px;">
+                    Welcome to Blue Orca, a trusted name in the trading industry. With a steadfast commitment to
+                    excellence and a proven track record, we connect businesses with high-quality products and
+                    solutions tailored to their needs.
+                </p>
+            </div>
+
+            <!-- Accordion for About Details -->
+            <div class="accordion accordion-flush" id="aboutAccordion">
+                <div class="accordion-item bg-transparent border-bottom border-light">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mission">
+                            Our Mission
+                        </button>
+                    </h2>
+                    <div id="mission" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                        <div class="accordion-body bg-dark text-white rounded">
+                            At Blue Orca, we aim to foster growth and prosperity for our clients by providing exceptional
+                            services. Our mission is to bridge markets, facilitate trade, and create value through
+                            reliable partnerships and innovative solutions.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-transparent border-bottom border-light">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#vision">
+                            Our Vision
+                        </button>
+                    </h2>
+                    <div id="vision" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                        <div class="accordion-body bg-dark text-white rounded">
+                            Our primary objective is to attain a prominent position in performance and
+                            profitability, elevating the company's reputation. We aspire to establish an integrated system that
+                            encompasses competitive quality products and services, customer relationships, market
+                            penetration, distribution channels, and network connections.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional accordion items can follow the same pattern -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="service" class="py-5 bg-gradient-blue text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-4">Services</h2>
+                <p class="lead">
+                    Explore our comprehensive range of energy solutions, designed to meet the needs of industries
+                    worldwide.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-hover">
+                        <img src="assets/diesel.jpg" class="card-img-top" alt="Diesel">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Diesel</h3>
+                            <p class="card-text">
+                                We supply premium diesel fuel suitable for transportation, industrial, and agricultural
+                                needs, ensuring efficiency and reliability.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-hover">
+                        <img src="assets/refuel.jpg" class="card-img-top" alt="Fuel Oil">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Fuel Oil</h3>
+                            <p class="card-text">
+                                Our high-quality fuel oil is ideal for powering industrial boilers and other heavy
+                                equipment, guaranteeing consistent performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-hover">
+                        <img src="assets/jet-engine.jpg" class="card-img-top" alt="Jet Fuel">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Jet Fuel</h3>
+                            <p class="card-text">
+                                We provide aviation-grade jet fuel, adhering to the highest safety and quality standards
+                                to meet the demands of the aviation industry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-gradient-blue text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <h2 class="display-5 fw-bold mb-4 text-center">Contact Us</h2>
+                    <p class="lead text-center mb-5">
+                        Get in touch with us today to learn more about our services. Our team is ready to answer
+                        your questions and provide the support you need.
+                    </p>
+                    <h1>This is a <a href="test.html">a test</a></h1>
+
+                    <form action="contact.php" method="POST">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control bg-dark text-white" name="name" required 
+                                   placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control bg-dark text-white" name="email" required 
+                                   placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control bg-dark text-white" name="phone" 
+                                   placeholder="Enter your phone">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control bg-dark text-white" name="message" required 
+                                      placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light text-primary w-100 rounded-pill">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3 text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Blue Orca. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

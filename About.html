@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blue Orca</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <style>
+        /* Custom styles to ensure footer stays at bottom */
+        html, body {
+            height: 100%;
+        }
+        .page-container {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .content-wrap {
+            flex: 1 0 auto;
+        }
+        .footer {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column h-100">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="#page-top" class="navbar-brand d-flex align-items-center">
+                <img src="assets/logo.png" alt="Blue Orca Logo" height="40" class="me-3">
+                BLUE ORCA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="Services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="Contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Content Wrapper -->
+    <div class="content-wrap container mt-5 pt-5">
+<section id="about" class="py-5 bg-gradient-blue text-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-4">About Us</h2>
+                <p class="lead mx-auto" style="max-width: 800px;">
+                    Welcome to Blue Orca, a trusted name in the trading industry. With a steadfast commitment to
+                    excellence and a proven track record, we connect businesses with high-quality products and
+                    solutions tailored to their needs.
+                </p>
+            </div>
+
+            
+            <div class="accordion accordion-flush" id="aboutAccordion">
+                <div class="accordion-item bg-transparent border-bottom border-light">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mission">
+                            Our Mission
+                        </button>
+                    </h2>
+                    <div id="mission" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                        <div class="accordion-body bg-dark text-white rounded">
+                            At Blue Orca, we aim to foster growth and prosperity for our clients by providing exceptional
+                            services. Our mission is to bridge markets, facilitate trade, and create value through
+                            reliable partnerships and innovative solutions.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-transparent border-bottom border-light">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-transparent text-white" type="button" data-bs-toggle="collapse" data-bs-target="#vision">
+                            Our Vision
+                        </button>
+                    </h2>
+                    <div id="vision" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                        <div class="accordion-body bg-dark text-white rounded">
+                            Our primary objective is to attain a prominent position in performance and
+                            profitability, elevating the company's reputation. We aspire to establish an integrated system that
+                            encompasses competitive quality products and services, customer relationships, market
+                            penetration, distribution channels, and network connections.
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+<footer class="footer bg-dark text-white py-3 text-center mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Blue Orca. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
